@@ -1,0 +1,53 @@
+html,
+body {
+    font-family: 'Roboto', sans-serif !important;
+    overflow-x: hidden;
+    height: auto;
+    padding-bottom: 20px;
+}
+
+.presenter {
+    color: #fff;
+    height: 500px;
+    background-image: url('../images/shoping.jpg');
+    background-repeat: no-repeat;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    background-position: center;
+}
+
+.mask {
+    height: 100%;
+    width: 100%;
+    background: rgba(0, 0, 0, .5);
+}
+
+.nav-item>.nav-link {
+    color: #fff !important;
+}
+
+nav>.navbar-brand {
+    color: #fff !important;
+    font-family: 'Lobster', cursive;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.pitch-text {
+    margin-top: 200px;
+    font-size: 40px;
+    font-style: italic;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+}
+
+.product-image {
+    height: 150px;
+    width: 200px;
+}
+
+.bordered {
+    border: solid;
+}
