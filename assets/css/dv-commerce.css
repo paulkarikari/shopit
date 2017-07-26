@@ -24,12 +24,23 @@ body {
     background: rgba(0, 0, 0, .5);
 }
 
-.nav-item>.nav-link {
+.nav-item>.white {
     color: #fff !important;
 }
 
-nav>.navbar-brand {
+nav>.navbar-brand>.white {
     color: #fff !important;
+    font-family: 'Lobster', cursive;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+nav-item>.nav-link {
+    color: #000 !important;
+}
+
+nav>.navbar-brand {
+    color: #000 !important;
     font-family: 'Lobster', cursive;
     font-size: 30px;
     font-weight: bold;
@@ -50,4 +61,13 @@ nav>.navbar-brand {
 
 .bordered {
     border: solid;
+}
+
+.nav-drop {
+    background-color: rgba(0, 0, 0, .5);
+    color: white;
+}
+
+.nav-drop>a {
+    color: white;
 }
