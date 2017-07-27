@@ -52,9 +52,9 @@
                 <p class="text-center ">Shopping Made Easy</p>
                 <div class="row justify-content-center">
                     <div class="col-4">
-                        <form action="/pages/search" method="get" accept-charset="utf-8">
+                        <form id="searchForm" action="/pages/search?searchParam=name^" method="get" accept-charset="utf-8">
                             <div class="input-group input-group-lg">
-                                <input type="text" class="form-control" name="q" placeholder="Search for Products">
+                                <input type="text" class="form-control" id="query" name="q" placeholder="Search for Products">
                                 <span class="input-group-btn">
                             <button class="btn btn-success" type="button">Go!</button>
                             </span>
@@ -67,33 +67,16 @@
         <!-- end of mask -->
     </div>
     <h3 class="text-center text-muted my-5">New Arrivals</h3>
-    <div class="row justify-content-around">
-        <div class="dv-get-all:shopit:inventry">
-            <div class="product-list-item col-md-3 text-center card py-3 my-3 mx-3">
-                <img src="http://lorempixel.com/400/200/fashion" class="img-responsive 
+    <div class="row justify-content-around dv-get-all:shopit:inventry">
+        <div class="product-list-item col-md-3 text-center card py-3 my-3 mx-3">
+            <img src="http://lorempixel.com/400/200/fashion" class="img-responsive 
                 product-image mx-auto" alt="Image">
-                <h6 class="text-center product-title mt-3"><span class="var-name"></span></h6>
-                <h5 class="text-center text-bold text-success">GHS&cent;<span class="var-price">0.00</span></h5>
-                <button type="button" class="btn btn-success btn-block cd-add-to-cart" data-price="25.99">
-                    <i class="fa fa-shopping-cart"></i> Add to Cart</button>
-            </div>
+            <h6 class="text-center product-title mt-3"><span class="var-name"></span></h6>
+            <h5 class="text-center text-bold text-success">GHS&cent;<span class="var-price">0.00</span></h5>
+            <button type="button" class="btn btn-success btn-block cd-add-to-cart" data-price="25.99">
+                <i class="fa fa-shopping-cart"></i> Add to Cart</button>
         </div>
     </div>
-    <table>
-        <tr>
-            <th>Name</th>
-            <th>Price</th>
-            <th>Discount</th>
-            <th>Description</th>
-        </tr>
-        <tbody class="dv-get-all:shopit:inventry">
-            <tr>
-                <td class="var-name">Eve</td>
-                <td class="var-price">Jackson</td>
-                <td class="var-discount">94</td>
-            </tr>
-        </tbody>
-    </table>
     <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>

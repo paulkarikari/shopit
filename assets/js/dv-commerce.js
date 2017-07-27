@@ -13,5 +13,12 @@ $(document).ready(function() {
          }
      }
      document.onscroll = scroll;*/
+    //searchParam=name^watch
+    $('#searchForm').on('submit', function(event) {
+        event.preventDefault();
+        var newloction = $(this).attr('action') + $('#query').val();
+        console.log(newloction);
+        window.location = newloction;
+    });
 
 });
